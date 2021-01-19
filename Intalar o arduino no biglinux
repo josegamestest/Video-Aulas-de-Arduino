@@ -1,0 +1,45 @@
+Escrito por: José Anastácio
+
+Como instalar Arduíno Uno no Biglinux
+
+    Os projetos em Arduíno são muito requisitado por ser simples, produtivo.
+Trabalhar com Arduíno no Linux tem suas particularidades, 
+vale a pena testar, uma delas e a velocidade do sistema,
+principalmente quando assunto e trafego de dados para fora do computador,
+além do fato de ser uma distro Linux, o sistema foi otimizado 
+para mais que isso, se tornar uma versão de “desktop”,
+que alcança o máximo de desempenho possível.
+
+Para instalar o equipamento físico do Arduíno Uno basta conectar no USB,
+porem a IDE, pode requerer um pouco mais de práticas, acompanhe os passos básicos.
+
+1 Primeiro entre no site do Arduíno
+2 clique na aba de programas\transferência\
+3 Você tem as opções de instalação, escolha a opção que estiver de acordo com seu computador
+
+Apos clicar e baixar, extraia o arquivo e instale da seguinte forma.
+4 escreva este comando no terminal para chegar na pasta de download.
+$ cd Downloads
+
+5 Uma vez na pasta  “Downloads” mova o arquivo extraído arduino-1.8.6  para a pasta opt
+$ sudo mv arduino-1.8.6 /opt
+
+No caso depois do "mv" coloque o nome e a versão do seu arquivo que você baixou.
+
+Entre no diretorio do instalador
+$ cd   /opt/arduino-1.8.6
+
+Agora instale o arquivo com o seguinte comando
+$ ./install.sh
+
+Apos clicar e baixar, extraia o arquivo e instale da seguinte forma.
+4 escreva este comando no terminal para chegar na pasta de download.
+$ cd Downloads
+
+5 Uma vez na pasta  “Downloads” mova o arquivo extraído arduino-1.8.6  para a pasta opt
+$ sudo mv arduino-1.8.6 /opt
+
+No caso depois do "mv" coloque o nome e a versão do seu arquivo que você baixou.
+
+Entre no diretorio do instalador
+$ cd   /opt/arduino-1Pronto Arduíno instalado com isso você terá o Arduíno instalado e poderá acessar ele pelos atalhos que serão criados automaticamente.

@@ -1,0 +1,21 @@
+Resolver erro em compilar no Linux
+
+Compilar Arduíno no Linux erro.
+
+Apos seguir passo a passo da instalação da IDE do Linux ainda a um problema muito comum.
+Quando for compilar o projeto e ele não prosseguir e mostra a seguinte mensagem.
+Erro ao compilar projeto mensagem
+
+"avrdude: ser_open(): can't open device "/dev/ttyACM0": Permission denied
+ioctl("TIOCMGET"): Inappropriate ioctl for device"
+
+E um ero de Permissão não concedida ao efetuar o procedimento.
+para resolver basta escrever as seguintes linhas no terminal do sistema
+$ sudo usermod -a -G dialout <nodeusuario>
+$ sudo chmod a+rw /dev/ttyACM0
+
+Lembrando que o "nodeusuario" e seu nome de usuário, o meu ficaria assim.
+$ sudo usermod -a -G dialout jose
+$ sudo chmod a+rw /dev/ttyACM0
+
+Teste se der certo caso resolvido.
